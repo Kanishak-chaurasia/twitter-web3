@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "api": {
+    "projectId": "pi5ju1z6",
+    "dataset": "production"
+  },
+  "project": {
+    "name": "twitter-web3"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}
